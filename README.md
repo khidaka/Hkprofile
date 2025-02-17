@@ -38,7 +38,7 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
 2. Clone this repository:
    ```sh
-   git clone https://github.com/your-repo-name.git
+   git clone https://github.com/khidaka/Hkprofile.git
    ```
 3. Copy the `karabiner.json` file to your Karabiner configuration folder:
    ```sh
