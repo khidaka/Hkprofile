@@ -25,6 +25,7 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 - `Right Shift + 0` → `0`
 - `0` → `-`
 - `Right Shift + Comma` → `Comma`
+- `Right Shift + Slash` → `Slash`
 
 ### Additional Remappings
 - `Shift + Delete/Backspace` → `*`
