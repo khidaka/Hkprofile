@@ -64,7 +64,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + bnmhjkuio0 to 1234567890, and 0 to -, and right_shift + comma to comma, and right_shift + slash to slash",
+                        "description": "Map right_shift + bnmhjkuio0 to 1234567890, and 0 to -",
                         "manipulators": [
                             {
                                 "from": {
@@ -182,28 +182,6 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "key_code": "hyphen" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": ["right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "comma" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "slash",
-                                    "modifiers": {
-                                        "mandatory": ["right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "slash" }],
                                 "type": "basic"
                             }
                         ]
