@@ -259,13 +259,13 @@
                         ]
                     },
                     {
-                        "description": "Change left_command+hjkl to arrow keys",
+                        "description": "Change left_command/right_command+hjkl to arrow keys",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
-                                        "mandatory": ["left_command"],
+                                        "mandatory": ["command"],
                                         "optional": ["any"]
                                     }
                                 },
@@ -276,7 +276,7 @@
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
-                                        "mandatory": ["left_command"],
+                                        "mandatory": ["command"],
                                         "optional": ["any"]
                                     }
                                 },
@@ -287,7 +287,7 @@
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
-                                        "mandatory": ["left_command"],
+                                        "mandatory": ["command"],
                                         "optional": ["any"]
                                     }
                                 },
@@ -298,7 +298,7 @@
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
-                                        "mandatory": ["left_command"],
+                                        "mandatory": ["command"],
                                         "optional": ["any"]
                                     }
                                 },
