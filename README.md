@@ -8,9 +8,13 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 - `Caps Lock` → `Right Command`
 - `Right Command` → `Japanese Kana` (Disabled by default)
 - `Right Shift + Right Command` → `Japanese Eisuu` (Disabled by default)
+- `Japanese Eisuu (英数)` → `Enter`
 - `Close Bracket ( ] )` → `Shift + 8` ( * )
 - `Backslash ( \ )` → `Shift + 9` ( ( )
 - `Spacebar` → `Right Shift` (acts as space when pressed alone)
+
+### Application Switching
+- When an application is activated, the input mode automatically switches to ABC (英字), reducing input mistakes and improving workflow efficiency.
 
 ### Numeric Key Remappings (with Right Shift)
 - `Right Shift + B` → `1`
