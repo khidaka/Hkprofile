@@ -37,6 +37,7 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 - `Shift + 8` → `[` (Open Bracket)
 - `Shift + 9` → `]` (Close Bracket)
 - `Left Command + H/J/K/L` → Arrow keys (Left, Down, Up, Right)
+  - *Note: Previously this was mapped to Right Command + H/J/K/L, but now uses Left Command for better home position ergonomics.*
 
 ## Installation
 1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
