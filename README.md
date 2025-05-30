@@ -30,6 +30,7 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 - `Right Shift + O` → `9`
 - `Right Shift + 0` → `0`
 - `0` → `-`
+  - *Note: The original hyphen key (-) is disabled. Please use the 0 key for hyphen input to maintain home position ergonomics.*
 
 ### Additional Remappings
 - `Shift + Delete/Backspace` → `*`

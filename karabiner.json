@@ -2,7 +2,17 @@
     "profiles": [
         {
             "complex_modifications": {
-                "rules": [
+                "rules": [       
+                    {
+                        "description": "Disable hyphen key",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": { "key_code": "hyphen" },
+                                "to": [{ "key_code": "vk_none" }]
+                            }
+                        ]
+                    },
                     {
                         "description": "Change caps_lock to right_command",
                         "manipulators": [
