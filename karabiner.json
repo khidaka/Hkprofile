@@ -306,6 +306,55 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Switch to EISUU (英数) when application is activated",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": { "key_code": "vk_none" },
+                                "to": [{ "key_code": "japanese_eisuu" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Send EISUU when left_command is released after app switching (key_up only)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "left_command",
+                                    "modifiers": {
+                                        "optional": ["any"]
+                                    },
+                                    "key_up": true
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "variable_if",
+                                        "name": "app_switching",
+                                        "value": 1
+                                    }
+                                ],
+                                "to": [
+                                    { "key_code": "japanese_eisuu" },
+                                    {
+                                        "set_variable": {
+                                            "name": "app_switching",
+                                            "value": 0
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -349,27 +398,3 @@
         }
     ]
 }
-
-{
-    "description": "Switch to ABC when application changes",
-    "manipulators": [
-      {
-        "type": "basic",
-        "from": {
-          "key_code": "vk_none"
-        },
-        "to": [
-          {
-            "select_input_source": {
-              "input_source_id": "com.apple.keylayout.ABC"
-            }
-          }
-        ],
-        "conditions": [
-          {
-            "type": "frontmost_application_changed"
-          }
-        ]
-      }
-    ]
-  }
