@@ -14,7 +14,8 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 - `Spacebar` → `Right Shift` (acts as space when pressed alone)
 
 ### Application Switching
-- When an application is activated, the input mode automatically switches to ABC (英字), reducing input mistakes and improving workflow efficiency.
+- When an application is activated, the input mode automatically switches to EISUU (英数).
+- After switching applications, releasing the left_command key also sends EISUU (英数), ensuring the input mode is always reset to alphanumeric.
 
 ### Numeric Key Remappings (with Right Shift)
 - `Right Shift + B` → `1`
