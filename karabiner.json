@@ -355,6 +355,19 @@
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "description": "right_shift + japanese_kana to japanese_eisuu",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "japanese_kana",
+                                    "modifiers": { "mandatory": ["right_shift"] }
+                                },
+                                "to": [ { "key_code": "japanese_eisuu" } ]
+                            }
+                        ]
                     }
                 ]
             },
@@ -372,10 +385,6 @@
                 {
                     "from": { "key_code": "japanese_eisuu" },
                     "to": [{ "key_code": "return_or_enter" }]
-                },
-                {
-                    "from": { "key_code": "japanese_kana" },
-                    "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
                 },
                 {
                     "from": { "key_code": "return_or_enter" },
