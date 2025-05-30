@@ -9,6 +9,7 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 - `Right Command` → `Japanese Kana` (Disabled by default)
 - `Right Shift + Right Command` → `Japanese Eisuu` (Disabled by default)
 - `Japanese Eisuu (英数)` → `Enter`
+- `right_shift + Japanese Kana (かな)` → `Japanese Eisuu (英数)`
 - `Close Bracket ( ] )` → `Shift + 8` ( * )
 - `Backslash ( \ )` → `Shift + 9` ( ( )
 - `Spacebar` → `Right Shift` (acts as space when pressed alone)
