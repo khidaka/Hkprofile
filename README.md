@@ -1,24 +1,27 @@
-# Karabiner-Elements Configuration
+# Hkprofile
 
 ## Overview
-This repository contains a custom `karabiner.json` configuration file for [Karabiner-Elements](https://karabiner-elements.pqrs.org/), a powerful keyboard customization tool for macOS. The configuration includes key remappings and complex modifications to enhance efficiency and workflow.
+This repository contains a custom `karabiner.json` configuration file for [Karabiner-Elements](https://karabiner-elements.pqrs.org/), a powerful keyboard customization tool for macOS. The configuration is designed to enhance typing efficiency and maintain home position ergonomics.
 
 ## Features
-### General Key Remappings
+
+### Basic Key Remappings
 - `Caps Lock` → `Right Command`
+- `Spacebar` → `Right Shift` (acts as space when pressed alone)
+- `Japanese Eisuu (英数)` → `Enter`
+- `Enter` → Disabled
+- `Right Command` → `Delete/Backspace`
+- `Right Shift` → Disabled
+
+### Japanese Input Mode Management
 - `Right Command` → `Japanese Kana` (Disabled by default)
 - `Right Shift + Right Command` → `Japanese Eisuu` (Disabled by default)
-- `Japanese Eisuu (英数)` → `Enter`
 - `right_shift + Japanese Kana (かな)` → `Japanese Eisuu (英数)`
-- `Close Bracket ( ] )` → `Shift + 8` ( * )
-- `Backslash ( \ )` → `Shift + 9` ( ( )
-- `Spacebar` → `Right Shift` (acts as space when pressed alone)
+- Automatic EISUU (英数) mode when:
+  - Application is activated
+  - Left Command is released after app switching
 
-### Application Switching
-- When an application is activated, the input mode automatically switches to EISUU (英数).
-- After switching applications, releasing the left_command key also sends EISUU (英数), ensuring the input mode is always reset to alphanumeric.
-
-### Numeric Key Remappings (with Right Shift)
+### Numeric Input (with Right Shift)
 - `Right Shift + B` → `1`
 - `Right Shift + N` → `2`
 - `Right Shift + M` → `3`
@@ -29,20 +32,28 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 - `Right Shift + I` → `8`
 - `Right Shift + O` → `9`
 - `Right Shift + 0` → `0`
-- `0` → `-`
-  - *Note: The original hyphen key (-) is disabled. Please use the 0 key for hyphen input to maintain home position ergonomics.*
-  - *Note: The original number keys 1-9 are disabled. Please use the right shift + home row keys for numeric input to maintain home position ergonomics.*
+- `0` → `-` (replaces original hyphen key)
+  - *Note: Original number keys 1-9 and hyphen key are disabled to maintain home position ergonomics*
 
-### Additional Remappings
+### Symbol Input (with Right Shift)
+- `Right Shift + Q` → `!`
+- `Right Shift + P` → `=`
+  - *Note: Original Shift + 1 for ! and Shift + - for = are disabled to prevent accidental inputs*
+
+### Bracket and Special Character Remappings
+- `Close Bracket ( ] )` → `Shift + 8` ( * )
+- `Backslash ( \ )` → `Shift + 9` ( ( )
 - `Shift + Delete/Backspace` → `*`
 - `Shift + Enter` → `+` (Disabled by default)
 - `Shift + 8` → `[` (Open Bracket)
 - `Shift + 9` → `]` (Close Bracket)
+
+### Navigation
 - `Left Command + H/J/K/L` → Arrow keys (Left, Down, Up, Right)
-  - *Note: Previously this was mapped to Right Command + H/J/K/L, but now uses Left Command for better home position ergonomics.*
+  - *Note: Uses Left Command for better home position ergonomics*
 
 ## Installation
-1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
+1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/)
 2. Clone this repository:
    ```sh
    git clone https://github.com/khidaka/Hkprofile.git
@@ -51,11 +62,15 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
    ```sh
    cp karabiner.json ~/.config/karabiner/
    ```
-4. Open Karabiner-Elements and select the profile "Hk profile."
+4. Open Karabiner-Elements and select the profile "Hk profile"
 
 ## Customization
 You can modify `karabiner.json` to adjust key mappings according to your needs. Use the Karabiner-Elements "Complex Modifications" tab to enable or disable specific mappings.
 
+## Development Environment
+- macOS
+- Karabiner-Elements
+
 ## License
-This configuration is open-source and available for customization. Feel free to modify and adapt it to your workflow.
+MIT
 
