@@ -52,6 +52,23 @@ This repository contains a custom `karabiner.json` configuration file for [Karab
 - `Left Command + H/J/K/L` → Arrow keys (Left, Down, Up, Right)
   - *Note: Uses Left Command for better home position ergonomics*
 
+### 数字キー
+
+数字キーは右シフトと組み合わせて使用します：
+
+- 右シフト + n → 1
+- 右シフト + m → 2
+- 右シフト + , → 3
+- 右シフト + j → 4
+- 右シフト + k → 5
+- 右シフト + l → 6
+- 右シフト + i → 7
+- 右シフト + o → 8
+- 右シフト + p → 9
+- 右シフト + 0 → 0
+
+0キーのみを押すと `-` が入力されます。
+
 ## Installation
 1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/)
 2. Clone this repository:
