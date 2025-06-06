@@ -400,7 +400,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "p",
+                                    "key_code": "semicolon",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
