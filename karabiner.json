@@ -473,6 +473,22 @@
                             { "type": "basic", "from": { "key_code": "8" }, "to": [{ "key_code": "vk_none" }] },
                             { "type": "basic", "from": { "key_code": "9" }, "to": [{ "key_code": "vk_none" }] }
                         ]
+                    },
+                    {
+                        "description": "Map right_shift + open_bracket to 0 for better number key ergonomics",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": ["right_shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "0" }],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
