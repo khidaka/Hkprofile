@@ -5,6 +5,7 @@
                 "rules": [
                     {
                         "description": "Disable hyphen key",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "hyphen" },
@@ -49,7 +50,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + nm,jkliop to 1234567890, and 0 to -",
+                        "description": "Map right_shift + nm,jkliop to 123456789",
                         "manipulators": [
                             {
                                 "from": {
@@ -148,25 +149,6 @@
                                     }
                                 },
                                 "to": [{ "key_code": "9" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "0",
-                                    "modifiers": {
-                                        "mandatory": ["right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "0" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "0",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [{ "key_code": "hyphen" }],
                                 "type": "basic"
                             }
                         ]
@@ -331,33 +313,11 @@
                                 },
                                 "to": [{ "key_code": "vk_none" }],
                                 "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "hyphen",
-                                    "modifiers": {
-                                        "mandatory": ["left_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "vk_none" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "hyphen",
-                                    "modifiers": {
-                                        "mandatory": ["right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "vk_none" }],
-                                "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Disable number keys 1-9",
+                        "description": "Disable number keys 1-9,0",
                         "manipulators": [
                             {
                                 "from": { "key_code": "1" },
@@ -401,6 +361,11 @@
                             },
                             {
                                 "from": { "key_code": "9" },
+                                "to": [{ "key_code": "vk_none" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "0" },
                                 "to": [{ "key_code": "vk_none" }],
                                 "type": "basic"
                             }
@@ -465,6 +430,10 @@
                 {
                     "from": { "key_code": "japanese_eisuu" },
                     "to": [{ "key_code": "return_or_enter" }]
+                },
+                {
+                    "from": { "key_code": "quote" },
+                    "to": [{ "key_code": "hyphen" }]
                 },
                 {
                     "from": { "key_code": "return_or_enter" },
