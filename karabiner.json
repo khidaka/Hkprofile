@@ -432,7 +432,7 @@
                     "to": [{ "key_code": "return_or_enter" }]
                 },
                 {
-                    "from": { "key_code": "quote" },
+                    "from": { "key_code": "semicolon" },
                     "to": [{ "key_code": "hyphen" }]
                 },
                 {
