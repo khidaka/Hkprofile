@@ -22,6 +22,7 @@
 - `Right Shift + u` → `+`（JIS配列: Shift+;）
 - `Right Shift + h` → `-`
 - `Right Shift + b` → `*`（JIS配列: Shift+2 など、実際はShift+quote）
+- `Right Shift + '（quote）` → `=`（JIS配列: Shift+ハイフン）
 
 ### 数字キー（右シフトと組み合わせ）
 - `Right Shift + n` → `1`
@@ -55,6 +56,7 @@
 - 数字キー `0-9`（単独押し）
 - ハイフン（-）
 - セミコロン（;）
+- イコール（=）
 - 矢印キー（上下左右）
 - Enter/Return
 - Delete/Backspace

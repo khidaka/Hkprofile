@@ -460,7 +460,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + u/h/b to +/-/* for arithmetic operations",
+                        "description": "Map right_shift + u/h/b/: to +/-/*/= for arithmetic operations",
                         "manipulators": [
                             {
                                 "from": {
@@ -500,6 +500,22 @@
                                 "to": [
                                     {
                                         "key_code": "quote",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": {
+                                        "mandatory": ["right_shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "hyphen",
                                         "modifiers": ["left_shift"]
                                     }
                                 ],
@@ -566,6 +582,10 @@
                 },
                 {
                     "from": { "key_code": "up_arrow" },
+                    "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "key_code": "hyphen" },
                     "to": [{ "key_code": "vk_none" }]
                 }
             ],
