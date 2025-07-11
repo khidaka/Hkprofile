@@ -403,7 +403,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "semicolon",
+                                    "key_code": "hyphen",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -432,10 +432,6 @@
                     "to": [{ "key_code": "return_or_enter" }]
                 },
                 {
-                    "from": { "key_code": "semicolon" },
-                    "to": [{ "key_code": "hyphen" }]
-                },
-                {
                     "from": { "key_code": "return_or_enter" },
                     "to": [{ "key_code": "vk_none" }]
                 },
@@ -446,6 +442,10 @@
                 {
                     "from": { "key_code": "right_shift" },
                     "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "key_code": "semicolon" },
+                    "to": [{ "key_code": "hyphen" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
