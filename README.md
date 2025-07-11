@@ -18,6 +18,11 @@
 - `Right Shift + Right Command` → `英数`（デフォルトで無効）
 - `Right Shift + かな` → `英数`
 
+### 四則演算（右シフトレイヤー）
+- `Right Shift + u` → `+`（JIS配列: Shift+;）
+- `Right Shift + h` → `-`
+- `Right Shift + b` → `*`（JIS配列: Shift+2 など、実際はShift+quote）
+
 ### 数字キー（右シフトと組み合わせ）
 - `Right Shift + n` → `1`
 - `Right Shift + m` → `2`
@@ -28,28 +33,33 @@
 - `Right Shift + i` → `7`
 - `Right Shift + o` → `8`
 - `Right Shift + p` → `9`
-- `Right Shift + 0` → `0`
-- `Right Shift + [` → `0`（7890を4本の指で連続して打つため）
-- `0` → `-`（元のハイフンキーの代わり）
-  - *注: ホームポジションのエルゴノミクスを維持するため、元の数字キー1-9とハイフンキーは無効化されています*
+- `Right Shift + [` → `0`
 
 ### 記号入力（右シフトと組み合わせ）
 - `Right Shift + Q` → `!`
 - `Right Shift + ;` → `:`
 - `Right Shift + .` → `/`
-  - *注: 以前は`Right Shift + ;`で`=`を入力していたが、現在はコロン(:)に変更し、競合を解消しました*
 
 ### 括弧と特殊文字のリマップ
 - `]` → `Shift + 8`（*）
 - `\` → `Shift + 9`（(）
+- `Right Shift + a/s/d/f` → 括弧・カッコ類
 - `Shift + Delete/Backspace` → `*`
-- `Shift + Enter` → `+`（デフォルトで無効）
-- `Shift + 8` → `[`
-- `Shift + 9` → `]`
+- `Shift + 8` → `[`（デフォルトで無効）
+- `Shift + 9` → `]`（デフォルトで無効）
 
 ### ナビゲーション
 - `Left Command + H/J/K/L` → 矢印キー（左/下/上/右）
-  - *注: ホームポジションのエルゴノミクスを考慮してLeft Commandを使用*
+
+### 無効化されているキー
+- 数字キー `0-9`（単独押し）
+- ハイフン（-）
+- セミコロン（;）
+- 矢印キー（上下左右）
+- Enter/Return
+- Delete/Backspace
+- 右シフト
+- 右コマンド
 
 ## インストール方法
 1. [Karabiner-Elements](https://karabiner-elements.pqrs.org/)をインストール
