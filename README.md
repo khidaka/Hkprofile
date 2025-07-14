@@ -1,85 +1,86 @@
-# Hkprofile
+# Karabiner-Elements Custom Rules
 
-## 概要
-このリポジトリは、macOS用の強力なキーボードカスタマイズツールである[Karabiner-Elements](https://karabiner-elements.pqrs.org/)の設定ファイル`karabiner.json`を含んでいます。この設定は、タイピング効率を向上させ、ホームポジションのエルゴノミクスを維持するように設計されています。
+## 概要 / Overview
 
-## 機能
+このリポジトリは、[Karabiner-Elements](https://karabiner-elements.pqrs.org/) 用のカスタムキーマップ設定ファイル (`karabiner.json`) を共有するものです。  
+主に macOS 上での日本語JIS配列・ミニマルな分割キーボード用途を想定し、「右Shiftを起点とした数値入力」や「コマンド＋hjklでの矢印移動」など、ホームポジションから手を離さず快適な操作ができることを目指しています。
 
-### 基本キーリマップ
-- `Caps Lock` → `Right Command`
-- `Spacebar` → `Right Shift`（単独押しでスペース）
-- `英数` → `Enter`
-- `Enter` → 無効化
-- `Right Command` → `Delete/Backspace`
-- `Right Shift` → 無効化
+This repository provides a highly customized Karabiner-Elements profile for advanced keyboard remapping, especially focused on keeping hands on the home row and optimizing for Japanese JIS layouts and split/minimal keyboards.
 
-### 日本語入力モード管理
-- `Right Command` → `かな`（デフォルトで無効）
-- `Right Shift + Right Command` → `英数`（デフォルトで無効）
-- `Right Shift + かな` → `英数`
+---
 
-### 四則演算（右シフトレイヤー）
-- `Right Shift + u` → `+`（JIS配列: Shift+;）
-- `Right Shift + h` → `-`
-- `Right Shift + b` → `*`（JIS配列: Shift+2 など、実際はShift+quote）
+## 主な特徴 / Features
 
-### 数字キー（右シフトと組み合わせ）
-- `Right Shift + n` → `1`
-- `Right Shift + m` → `2`
-- `Right Shift + ,` → `3`
-- `Right Shift + j` → `4`
-- `Right Shift + k` → `5`
-- `Right Shift + l` → `6`
-- `Right Shift + i` → `7`
-- `Right Shift + o` → `8`
-- `Right Shift + p` → `9`
-- `Right Shift + [` → `0`
+- **Caps Lock → 右Command**  
+  Caps Lock キーを右Commandキーとして再割り当て
 
-### 記号入力（右シフトと組み合わせ）
-- `Right Shift + Q` → `!`
-- `Right Shift + ;` → `:`
-- `Right Shift + .` → `/`
+- **右Shift+nm,jkliop → 123456789**  
+  右Shift＋ホームポジションで数字入力  
+  （例：右Shift+nで「1」, 右Shift+mで「2」...）
 
-### 括弧と特殊文字のリマップ
-- `]` → `Shift + 8`（*）
-- `\` → `Shift + 9`（(）
-- `Right Shift + a/s/d/f` → 括弧・カッコ類
-- `Shift + Delete/Backspace` → `*`
-- `Shift + 8` → `[`（デフォルトで無効）
-- `Shift + 9` → `]`（デフォルトで無効）
+- **Spacebarを押しっぱなしで右Shift化**  
+  Spaceを単独で押すとSpace、他キーと同時なら右Shiftに
 
-### ナビゲーション
-- `Left Command + H/J/K/L` → 矢印キー（左/下/上/右）
+- **左Command+hjkl → 矢印キー**  
+  Vimライクにコマンド＋hjklでカーソル移動
 
-### 無効化されているキー
-- 数字キー `0-9`（単独押し）
-- ハイフン（-）
-- セミコロン（;）
-- 矢印キー（上下左右）
-- Enter/Return
-- Delete/Backspace
-- 右シフト
-- 右コマンド
+- **記号・演算子のホームポジション入力**  
+  右Shift+asdf で括弧類,  
+  右Shift+uhb:' で+-*/ などを直感的に配置
 
-## インストール方法
-1. [Karabiner-Elements](https://karabiner-elements.pqrs.org/)をインストール
-2. このリポジトリをクローン：
-   ```sh
-   git clone https://github.com/khidaka/Hkprofile.git
-   ```
-3. `karabiner.json`ファイルをKarabinerの設定フォルダにコピー：
-   ```sh
-   cp karabiner.json ~/.config/karabiner/
-   ```
-4. Karabiner-Elementsを開き、"Hk profile"を選択
+- **その他、使わないキーの無効化や特殊用途リマップ多数**  
+  （例：物理の数字キーや矢印キーを完全に無効化し、ホームポジション起点入力に最適化）
 
-## カスタマイズ
-必要に応じて`karabiner.json`を編集して、キーマッピングを調整できます。Karabiner-Elementsの"Complex Modifications"タブを使用して、特定のマッピングを有効または無効にすることができます。
+---
 
-## 開発環境
-- macOS
-- Karabiner-Elements
+## 使い方 / Usage
 
-## ライセンス
-MIT
+1. [Karabiner-Elements](https://karabiner-elements.pqrs.org/) をインストール
+2. 本リポジトリの `karabiner.json` を  
+   `~/.config/karabiner/karabiner.json` に上書き or  
+   Karabinerの設定画面からインポート
+3. 必要に応じてキーボード配列（JIS/US等）を環境に合わせて調整
+4. 自作キーボード等で動作確認し、違和感があればjsonを直接編集
+
+---
+
+## 詳細なルール例 / Main Rules Overview
+
+- **Caps Lock → 右Command**
+- **右Shift + [n m , j k l i o p] → [1 2 3 4 5 6 7 8 9]**
+- **右Shift + a/s/d/f → 括弧/バックスラッシュ**
+- **右Shift + u/h/b/':' → + - * =**
+- **左Command + hjkl → 矢印キー**
+- **Spaceバー：単押しはSpace、同時押しは右Shift**
+
+詳しい全リストは `karabiner.json` 内の `"complex_modifications"` をご参照ください。
+
+---
+
+## 注意・Tips
+
+- 物理の数字キーや矢印キー等、一部キーが完全に無効化されています。  
+  普通のキーボード利用には向きません。  
+  自作やミニマリスト配列、分割型での利用が前提です。
+- 必要に応じて個人環境に合わせて設定を微調整してください。
+- JIS配列前提ですが、US配列等に転用する場合はキーコードの調整が必要です。
+
+---
+
+## ライセンス / License
+
+MIT License (or specify your own if different)
+
+---
+
+## 参考・謝辞 / References & Acknowledgements
+
+- [Karabiner-Elements公式ドキュメント](https://karabiner-elements.pqrs.org/docs/json/)
+- この設定をベースに自分仕様へどんどんアレンジしてご利用ください
+
+---
+
+## 問い合わせ / Contact
+
+質問やフィードバックは [Issues](https://github.com/your-username/your-repo/issues) へどうぞ。
 
