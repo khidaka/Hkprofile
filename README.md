@@ -82,5 +82,5 @@ MIT License (or specify your own if different)
 
 ## 問い合わせ / Contact
 
-質問やフィードバックは [Issues](https://github.com/your-username/your-repo/issues) へどうぞ。
+質問やフィードバックは [Issues](https://github.com/khidaka/Hkprofile/issues) へどうぞ。
 
