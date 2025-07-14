@@ -3,9 +3,10 @@
 ## 概要 / Overview
 
 このリポジトリは、[Karabiner-Elements](https://karabiner-elements.pqrs.org/) 用のカスタムキーマップ設定ファイル (`karabiner.json`) を共有するものです。  
-主に macOS 上での日本語JIS配列・ミニマルな分割キーボード用途を想定し、「右Shiftを起点とした数値入力」や「コマンド＋hjklでの矢印移動」など、ホームポジションから手を離さず快適な操作ができることを目指しています。
+主に macOS 上での日本語JIS配列・ミニマルな分割キーボード用途を想定し、「右Shiftを起点とした数値入力」や「コマンド＋hjklでの矢印移動」、**親指Enter** など、ホームポジションから手を離さず快適な操作ができることを目指しています。
 
-This repository provides a highly customized Karabiner-Elements profile for advanced keyboard remapping, especially focused on keeping hands on the home row and optimizing for Japanese JIS layouts and split/minimal keyboards.
+This repository provides a highly customized Karabiner-Elements profile for advanced keyboard remapping, especially focused on keeping hands on the home row and optimizing for Japanese JIS layouts and split/minimal keyboards.  
+**Thumb Enter (Enter with thumb)** and other features included.
 
 ---
 
@@ -13,6 +14,11 @@ This repository provides a highly customized Karabiner-Elements profile for adva
 
 - **Caps Lock → 右Command**  
   Caps Lock キーを右Commandキーとして再割り当て
+
+- **Enterキーを英数キー（親指位置）にリマップ**  
+  標準のEnterキーは無効化し、  
+  代わりに「英数（Eisu）」キーをEnterとして利用。  
+  分割・小型キーボードでも「親指Enter」運用が可能です
 
 - **右Shift+nm,jkliop → 123456789**  
   右Shift＋ホームポジションで数字入力  
@@ -47,6 +53,8 @@ This repository provides a highly customized Karabiner-Elements profile for adva
 ## 詳細なルール例 / Main Rules Overview
 
 - **Caps Lock → 右Command**
+- **英数キー（親指位置） → Enterキー**
+- **（標準の）Enterキー → 無効化**
 - **右Shift + [n m , j k l i o p] → [1 2 3 4 5 6 7 8 9]**
 - **右Shift + a/s/d/f → 括弧/バックスラッシュ**
 - **右Shift + u/h/b/':' → + - * =**
@@ -62,6 +70,7 @@ This repository provides a highly customized Karabiner-Elements profile for adva
 - 物理の数字キーや矢印キー等、一部キーが完全に無効化されています。  
   普通のキーボード利用には向きません。  
   自作やミニマリスト配列、分割型での利用が前提です。
+- **親指位置の英数キーが「Enter」になる仕様**のため、物理キーボード側に英数キーが必要です。
 - 必要に応じて個人環境に合わせて設定を微調整してください。
 - JIS配列前提ですが、US配列等に転用する場合はキーコードの調整が必要です。
 
