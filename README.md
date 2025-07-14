@@ -2,23 +2,26 @@
 
 ## 概要 / Overview
 
-このリポジトリは、[Karabiner-Elements](https://karabiner-elements.pqrs.org/) 用のカスタムキーマップ設定ファイル (`karabiner.json`) を共有するものです。  
-主に macOS 上での日本語JIS配列・ミニマルな分割キーボード用途を想定し、「右Shiftを起点とした数値入力」や「コマンド＋hjklでの矢印移動」、**親指Enter** など、ホームポジションから手を離さず快適な操作ができることを目指しています。
+このリポジトリは、**MacBookのJIS配列（日本語配列）キーボード**を前提とした [Karabiner-Elements](https://karabiner-elements.pqrs.org/) 用カスタムキーマップ設定ファイル (`karabiner.json`) を共有するものです。  
+主に macOS 上で、JIS配列特有の記号や親指位置の英数キーを活用し、分割・ミニマルキーボードでもホームポジションから手を離さず快適な操作ができるよう設計しています。
 
-This repository provides a highly customized Karabiner-Elements profile for advanced keyboard remapping, especially focused on keeping hands on the home row and optimizing for Japanese JIS layouts and split/minimal keyboards.  
-**Thumb Enter (Enter with thumb)** and other features included.
+This repository provides a highly customized Karabiner-Elements profile based on the **JIS (Japanese) layout MacBook keyboard**.  
+It enables home-row centered, thumb-Enter operation, and various ergonomic remaps for minimalist/split keyboards on macOS.
 
 ---
 
 ## 主な特徴 / Features
+
+- **MacBookのJIS配列キーボード前提**  
+  JIS独自の記号配置・英数キー（親指位置）を活かした設計
 
 - **Caps Lock → 右Command**  
   Caps Lock キーを右Commandキーとして再割り当て
 
 - **Enterキーを英数キー（親指位置）にリマップ**  
   標準のEnterキーは無効化し、  
-  代わりに「英数（Eisu）」キーをEnterとして利用。  
-  分割・小型キーボードでも「親指Enter」運用が可能です
+  「英数（Eisu）」キーをEnterとして利用。  
+  分割・小型キーボードでも「親指Enter」運用が可能
 
 - **右Shift+nm,jkliop → 123456789**  
   右Shift＋ホームポジションで数字入力  
@@ -45,7 +48,7 @@ This repository provides a highly customized Karabiner-Elements profile for adva
 2. 本リポジトリの `karabiner.json` を  
    `~/.config/karabiner/karabiner.json` に上書き or  
    Karabinerの設定画面からインポート
-3. 必要に応じてキーボード配列（JIS/US等）を環境に合わせて調整
+3. キーボード配列は **JIS（日本語配列）** でご利用ください
 4. 自作キーボード等で動作確認し、違和感があればjsonを直接編集
 
 ---
@@ -67,12 +70,13 @@ This repository provides a highly customized Karabiner-Elements profile for adva
 
 ## 注意・Tips
 
+- **MacBookのJIS配列（日本語配列）キーボードを前提**としています。  
+  US配列や他メーカーのキーボードで使う場合、物理キー・記号配置が異なり、追加調整が必要です。
 - 物理の数字キーや矢印キー等、一部キーが完全に無効化されています。  
   普通のキーボード利用には向きません。  
   自作やミニマリスト配列、分割型での利用が前提です。
 - **親指位置の英数キーが「Enter」になる仕様**のため、物理キーボード側に英数キーが必要です。
 - 必要に応じて個人環境に合わせて設定を微調整してください。
-- JIS配列前提ですが、US配列等に転用する場合はキーコードの調整が必要です。
 
 ---
 
