@@ -4,6 +4,25 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "When Command+Space is pressed, first switch to EISUU, then open Spotlight.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "mandatory": ["left_command"] }
+                                },
+                                "to": [
+                                    { "key_code": "japanese_eisuu" },
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Change caps_lock to right_command",
                         "manipulators": [
                             {
@@ -99,7 +118,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "y",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -574,7 +593,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "y",
+                                    "key_code": "l",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -664,7 +683,19 @@
                     "to": [{ "key_code": "vk_none" }]
                 },
                 {
+                    "from": { "key_code": "equal_sign" },
+                    "to": [{ "key_code": "vk_none" }]
+                },
+                {
                     "from": { "key_code": "hyphen" },
+                    "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "key_code": "international1" },
+                    "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "key_code": "international3" },
                     "to": [{ "key_code": "vk_none" }]
                 },
                 {
@@ -700,16 +731,12 @@
                     "to": [{ "key_code": "vk_none" }]
                 },
                 {
-                    "from": { "key_code": "equal_sign" },
-                    "to": [{ "key_code": "vk_none" }]
+                    "from": { "key_code": "y" },
+                    "to": [{ "key_code": "l" }]
                 },
                 {
-                    "from": { "key_code": "international1" },
-                    "to": [{ "key_code": "vk_none" }]
-                },
-                {
-                    "from": { "key_code": "international3" },
-                    "to": [{ "key_code": "vk_none" }]
+                    "from": { "key_code": "l" },
+                    "to": [{ "key_code": "y" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
