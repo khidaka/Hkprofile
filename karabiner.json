@@ -33,32 +33,6 @@
                         ]
                     },
                     {
-                        "description": "Remap close_bracket to Shift+8 and backslash to Shift+9",
-                        "enabled": false,
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "close_bracket" },
-                                "to": [
-                                    {
-                                        "key_code": "8",
-                                        "modifiers": ["left_shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": { "key_code": "backslash" },
-                                "to": [
-                                    {
-                                        "key_code": "9",
-                                        "modifiers": ["left_shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Map right_shift + nm,jkliop to 123456789",
                         "manipulators": [
                             {
@@ -195,7 +169,7 @@
                         ]
                     },
                     {
-                        "description": "Change left_command+hjkl to arrow keys",
+                        "description": "Change left_command+hjky to arrow keys",
                         "manipulators": [
                             {
                                 "from": {
@@ -232,7 +206,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "y",
                                     "modifiers": {
                                         "mandatory": ["left_command"],
                                         "optional": ["any"]
@@ -687,6 +661,10 @@
                     "to": [{ "key_code": "vk_none" }]
                 },
                 {
+                    "from": { "key_code": "f" },
+                    "to": [{ "key_code": "o" }]
+                },
+                {
                     "from": { "key_code": "hyphen" },
                     "to": [{ "key_code": "vk_none" }]
                 },
@@ -703,8 +681,16 @@
                     "to": [{ "key_code": "return_or_enter" }]
                 },
                 {
+                    "from": { "key_code": "l" },
+                    "to": [{ "key_code": "y" }]
+                },
+                {
                     "from": { "key_code": "left_arrow" },
                     "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "key_code": "o" },
+                    "to": [{ "key_code": "f" }]
                 },
                 {
                     "from": { "key_code": "return_or_enter" },
@@ -733,18 +719,6 @@
                 {
                     "from": { "key_code": "y" },
                     "to": [{ "key_code": "l" }]
-                },
-                {
-                    "from": { "key_code": "l" },
-                    "to": [{ "key_code": "y" }]
-                },
-                {
-                    "from": { "key_code": "f" },
-                    "to": [{ "key_code": "o" }]
-                },
-                {
-                    "from": { "key_code": "o" },
-                    "to": [{ "key_code": "f" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
