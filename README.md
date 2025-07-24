@@ -23,9 +23,15 @@ It enables home-row centered, thumb-Enter operation, and various ergonomic remap
   「英数（Eisu）」キーをEnterとして利用。  
   分割・小型キーボードでも「親指Enter」運用が可能
 
+- **LキーとYキーの入れ替え（ホームポジション最適化）**  
+  日本語入力で使用頻度の高いYキーをホームポジション（Lキー位置）へ、LキーをYキー位置へ入れ替え。右シフトとの組み合わせも対応。
+
 - **右Shift+nm,jkliop → 123456789**  
   右Shift＋ホームポジションで数字入力  
   （例：右Shift+nで「1」, 右Shift+mで「2」...）
+
+- **LキーとYキーの入れ替え**  
+  LキーとYキーの物理位置を入れ替え。右シフト+y→6、右シフト+l→& など、複合カスタマイズも反映
 
 - **Spacebarを押しっぱなしで右Shift化**  
   Spaceを単独で押すとSpace、他キーと同時なら右Shiftに
@@ -58,7 +64,8 @@ It enables home-row centered, thumb-Enter operation, and various ergonomic remap
 - **Caps Lock → 右Command**
 - **英数キー（親指位置） → Enterキー**
 - **（標準の）Enterキー → 無効化**
-- **右Shift + [n m , j k l i o p] → [1 2 3 4 5 6 7 8 9]**
+- **右Shift + [n m , j k y i o p] → [1 2 3 4 5 6 7 8 9]**
+- **LキーとYキーの入れ替え（右Shift+y→6、右Shift+l→& も対応）**
 - **右Shift + a/s/d/f → 括弧/バックスラッシュ**
 - **右Shift + u/h/b/':' → + - * =**
 - **左Command + hjkl → 矢印キー**
@@ -77,6 +84,8 @@ It enables home-row centered, thumb-Enter operation, and various ergonomic remap
   自作やミニマリスト配列、分割型での利用が前提です。
 - **親指位置の英数キーが「Enter」になる仕様**のため、物理キーボード側に英数キーが必要です。
 - 必要に応じて個人環境に合わせて設定を微調整してください。
+- **レターキー（LとY）の入れ替えが含まれます。**  
+  ホームポジション最適化のため、LキーとYキーの物理位置が逆転しています。慣れるまで意識的な運用が必要です。
 
 ---
 
