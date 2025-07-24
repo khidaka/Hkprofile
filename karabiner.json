@@ -348,7 +348,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "f",
+                                    "key_code": "o",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
