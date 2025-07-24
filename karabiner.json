@@ -140,7 +140,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "o",
+                                    "key_code": "f",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -737,6 +737,14 @@
                 {
                     "from": { "key_code": "l" },
                     "to": [{ "key_code": "y" }]
+                },
+                {
+                    "from": { "key_code": "f" },
+                    "to": [{ "key_code": "o" }]
+                },
+                {
+                    "from": { "key_code": "o" },
+                    "to": [{ "key_code": "f" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
