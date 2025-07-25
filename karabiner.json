@@ -33,7 +33,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + nm,jkliop to 123456789",
+                        "description": "Map right_shift + nmjtkyifp@ to 1234567890 for better number key ergonomics",
                         "manipulators": [
                             {
                                 "from": {
@@ -59,7 +59,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "comma",
+                                    "key_code": "j",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -70,7 +70,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "t",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -103,7 +103,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "r",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -132,6 +132,17 @@
                                     }
                                 },
                                 "to": [{ "key_code": "9" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": ["right_shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "0" }],
                                 "type": "basic"
                             }
                         ]
@@ -169,7 +180,7 @@
                         ]
                     },
                     {
-                        "description": "Change left_command+hjky to arrow keys",
+                        "description": "Change left_command+htky to arrow keys",
                         "manipulators": [
                             {
                                 "from": {
@@ -184,7 +195,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "t",
                                     "modifiers": {
                                         "mandatory": ["left_command"],
                                         "optional": ["any"]
@@ -259,6 +270,7 @@
                     },
                     {
                         "description": "Map right_shift + open_bracket to 0 for better number key ergonomics",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -278,7 +290,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "period",
+                                    "key_code": "j",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -710,7 +722,7 @@
                 },
                 {
                     "from": { "key_code": "semicolon" },
-                    "to": [{ "key_code": "hyphen" }]
+                    "to": [{ "key_code": "d" }]
                 },
                 {
                     "from": { "key_code": "up_arrow" },
@@ -718,7 +730,43 @@
                 },
                 {
                     "from": { "key_code": "y" },
+                    "to": [{ "key_code": "hyphen" }]
+                },
+                {
+                    "from": { "key_code": "period" },
                     "to": [{ "key_code": "l" }]
+                },
+                {
+                    "from": { "key_code": "t" },
+                    "to": [{ "key_code": "period" }]
+                },
+                {
+                    "from": { "key_code": "j" },
+                    "to": [{ "key_code": "t" }]
+                },
+                {
+                    "from": { "key_code": "g" },
+                    "to": [{ "key_code": "u" }]
+                },
+                {
+                    "from": { "key_code": "u" },
+                    "to": [{ "key_code": "g" }]
+                },
+                {
+                    "from": { "key_code": "comma" },
+                    "to": [{ "key_code": "j" }]
+                },
+                {
+                    "from": { "key_code": "r" },
+                    "to": [{ "key_code": "comma" }]
+                },
+                {
+                    "from": { "key_code": "i" },
+                    "to": [{ "key_code": "r" }]
+                },
+                {
+                    "from": { "key_code": "d" },
+                    "to": [{ "key_code": "i" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
