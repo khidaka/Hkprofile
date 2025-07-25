@@ -286,11 +286,11 @@
                         ]
                     },
                     {
-                        "description": "Remap right_shift+period to slash (/) and right_shift+semicolon to colon (:) for home position date/time input",
+                        "description": "Remap right_shift+l to slash (/) and right_shift+d to colon (:) for home position date/time input",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "l",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -301,7 +301,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "hyphen",
+                                    "key_code": "d",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -313,7 +313,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + asdf to brackets and parentheses for home position ergonomics",
+                        "description": "Map right_shift + asio to brackets and parentheses for home position ergonomics",
                         "manipulators": [
                             {
                                 "from": {
@@ -349,7 +349,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "d",
+                                    "key_code": "i",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -495,7 +495,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + qwertyg to left_shift + 1234567 symbols",
+                        "description": "Map right_shift + qwe,.-u to left_shift + 1234567 symbols",
                         "manipulators": [
                             {
                                 "from": {
@@ -547,7 +547,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "r",
+                                    "key_code": "comma",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -563,7 +563,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "t",
+                                    "key_code": "period",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -579,7 +579,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "hyphen",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -595,7 +595,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "g",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -613,6 +613,16 @@
                     }
                 ]
             },
+            "devices": [
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 1121,
+                        "vendor_id": 21972
+                    },
+                    "ignore": true
+                }
+            ],
             "name": "Hk profile",
             "selected": true,
             "simple_modifications": [
@@ -661,6 +671,14 @@
                     "to": [{ "key_code": "vk_none" }]
                 },
                 {
+                    "from": { "key_code": "comma" },
+                    "to": [{ "key_code": "j" }]
+                },
+                {
+                    "from": { "key_code": "d" },
+                    "to": [{ "key_code": "i" }]
+                },
+                {
                     "from": { "key_code": "delete_or_backspace" },
                     "to": [{ "key_code": "vk_none" }]
                 },
@@ -677,8 +695,16 @@
                     "to": [{ "key_code": "o" }]
                 },
                 {
+                    "from": { "key_code": "g" },
+                    "to": [{ "key_code": "u" }]
+                },
+                {
                     "from": { "key_code": "hyphen" },
                     "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "key_code": "i" },
+                    "to": [{ "key_code": "r" }]
                 },
                 {
                     "from": { "key_code": "international1" },
@@ -687,6 +713,10 @@
                 {
                     "from": { "key_code": "international3" },
                     "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "key_code": "j" },
+                    "to": [{ "key_code": "t" }]
                 },
                 {
                     "from": { "key_code": "japanese_eisuu" },
@@ -703,6 +733,14 @@
                 {
                     "from": { "key_code": "o" },
                     "to": [{ "key_code": "f" }]
+                },
+                {
+                    "from": { "key_code": "period" },
+                    "to": [{ "key_code": "l" }]
+                },
+                {
+                    "from": { "key_code": "r" },
+                    "to": [{ "key_code": "comma" }]
                 },
                 {
                     "from": { "key_code": "return_or_enter" },
@@ -725,48 +763,20 @@
                     "to": [{ "key_code": "d" }]
                 },
                 {
-                    "from": { "key_code": "up_arrow" },
-                    "to": [{ "key_code": "vk_none" }]
-                },
-                {
-                    "from": { "key_code": "y" },
-                    "to": [{ "key_code": "hyphen" }]
-                },
-                {
-                    "from": { "key_code": "period" },
-                    "to": [{ "key_code": "l" }]
-                },
-                {
                     "from": { "key_code": "t" },
                     "to": [{ "key_code": "period" }]
-                },
-                {
-                    "from": { "key_code": "j" },
-                    "to": [{ "key_code": "t" }]
-                },
-                {
-                    "from": { "key_code": "g" },
-                    "to": [{ "key_code": "u" }]
                 },
                 {
                     "from": { "key_code": "u" },
                     "to": [{ "key_code": "g" }]
                 },
                 {
-                    "from": { "key_code": "comma" },
-                    "to": [{ "key_code": "j" }]
+                    "from": { "key_code": "up_arrow" },
+                    "to": [{ "key_code": "vk_none" }]
                 },
                 {
-                    "from": { "key_code": "r" },
-                    "to": [{ "key_code": "comma" }]
-                },
-                {
-                    "from": { "key_code": "i" },
-                    "to": [{ "key_code": "r" }]
-                },
-                {
-                    "from": { "key_code": "d" },
-                    "to": [{ "key_code": "i" }]
+                    "from": { "key_code": "y" },
+                    "to": [{ "key_code": "hyphen" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
