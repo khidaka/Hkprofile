@@ -33,7 +33,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + nmjtkyifp@ to 1234567890 for better number key ergonomics",
+                        "description": "Map right_shift + nmjtksrfy@ to 1234567890 for better number key ergonomics",
                         "manipulators": [
                             {
                                 "from": {
@@ -92,7 +92,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "y",
+                                    "key_code": "s",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -125,7 +125,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "p",
+                                    "key_code": "y",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -180,7 +180,7 @@
                         ]
                     },
                     {
-                        "description": "Change left_command+htky to arrow keys",
+                        "description": "Change left_command+htks to arrow keys",
                         "manipulators": [
                             {
                                 "from": {
@@ -217,7 +217,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "y",
+                                    "key_code": "s",
                                     "modifiers": {
                                         "mandatory": ["left_command"],
                                         "optional": ["any"]
@@ -243,6 +243,7 @@
                     },
                     {
                         "description": "Disable shift+1 for ! and shift+- for =",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -269,28 +270,11 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + open_bracket to 0 for better number key ergonomics",
-                        "enabled": false,
+                        "description": "Remap right_shift + ld to /: to for home position date/time input",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "open_bracket",
-                                    "modifiers": {
-                                        "mandatory": ["right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "0" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap right_shift+l to slash (/) and right_shift+d to colon (:) for home position date/time input",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "l",
+                                    "key_code": "slash",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -313,7 +297,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + asio to brackets and parentheses for home position ergonomics",
+                        "description": "Map right_shift + auio to ()[] for home position ergonomics",
                         "manipulators": [
                             {
                                 "from": {
@@ -333,7 +317,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "s",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -431,11 +415,11 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + u/h/b/: to +/-/*/= for arithmetic operations",
+                        "description": "Map right_shift + g/h/b/: to +/-/*/= for arithmetic operations",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "u",
+                                    "key_code": "g",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -671,8 +655,12 @@
                     "to": [{ "key_code": "vk_none" }]
                 },
                 {
+                    "from": { "key_code": "b" },
+                    "to": [{ "key_code": "hyphen" }]
+                },
+                {
                     "from": { "key_code": "comma" },
-                    "to": [{ "key_code": "j" }]
+                    "to": [{ "key_code": "m" }]
                 },
                 {
                     "from": { "key_code": "d" },
@@ -696,7 +684,7 @@
                 },
                 {
                     "from": { "key_code": "g" },
-                    "to": [{ "key_code": "u" }]
+                    "to": [{ "key_code": "l" }]
                 },
                 {
                     "from": { "key_code": "hyphen" },
@@ -704,11 +692,11 @@
                 },
                 {
                     "from": { "key_code": "i" },
-                    "to": [{ "key_code": "r" }]
+                    "to": [{ "key_code": "f" }]
                 },
                 {
                     "from": { "key_code": "international1" },
-                    "to": [{ "key_code": "vk_none" }]
+                    "to": [{ "key_code": "slash" }]
                 },
                 {
                     "from": { "key_code": "international3" },
@@ -724,19 +712,31 @@
                 },
                 {
                     "from": { "key_code": "l" },
-                    "to": [{ "key_code": "y" }]
+                    "to": [{ "key_code": "s" }]
                 },
                 {
                     "from": { "key_code": "left_arrow" },
                     "to": [{ "key_code": "vk_none" }]
                 },
                 {
+                    "from": { "key_code": "m" },
+                    "to": [{ "key_code": "n" }]
+                },
+                {
+                    "from": { "key_code": "n" },
+                    "to": [{ "key_code": "b" }]
+                },
+                {
                     "from": { "key_code": "o" },
-                    "to": [{ "key_code": "f" }]
+                    "to": [{ "key_code": "y" }]
+                },
+                {
+                    "from": { "key_code": "p" },
+                    "to": [{ "key_code": "open_bracket" }]
                 },
                 {
                     "from": { "key_code": "period" },
-                    "to": [{ "key_code": "l" }]
+                    "to": [{ "key_code": "j" }]
                 },
                 {
                     "from": { "key_code": "r" },
@@ -768,7 +768,7 @@
                 },
                 {
                     "from": { "key_code": "u" },
-                    "to": [{ "key_code": "g" }]
+                    "to": [{ "key_code": "r" }]
                 },
                 {
                     "from": { "key_code": "up_arrow" },
@@ -776,7 +776,11 @@
                 },
                 {
                     "from": { "key_code": "y" },
-                    "to": [{ "key_code": "hyphen" }]
+                    "to": [{ "key_code": "g" }]
+                },
+                {
+                    "from": { "key_code": "s" },
+                    "to": [{ "key_code": "u" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
