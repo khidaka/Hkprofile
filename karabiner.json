@@ -243,6 +243,7 @@
                     },
                     {
                         "description": "Disable shift+1 for ! and shift+- for =",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -269,7 +270,7 @@
                         ]
                     },
                     {
-                        "description": "Remap right_shift+l to slash (/) and right_shift+d to colon (:) for home position date/time input",
+                        "description": "Remap right_shift + ld to /: to for home position date/time input",
                         "manipulators": [
                             {
                                 "from": {
@@ -296,7 +297,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + asio to brackets and parentheses for home position ergonomics",
+                        "description": "Map right_shift + auio to ()[] for home position ergonomics",
                         "manipulators": [
                             {
                                 "from": {
@@ -316,7 +317,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "s",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
