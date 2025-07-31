@@ -33,7 +33,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + nmjtksrfy@ to 1234567890 for better number key ergonomics",
+                        "description": "Map right_shift + nmjtksrfyp to 1234567890 for better number key ergonomics",
                         "manipulators": [
                             {
                                 "from": {
@@ -136,7 +136,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "open_bracket",
+                                    "key_code": "p",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -317,7 +317,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "u",
+                                    "key_code": "i",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -333,7 +333,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -656,7 +656,7 @@
                 },
                 {
                     "from": { "key_code": "b" },
-                    "to": [{ "key_code": "hyphen" }]
+                    "to": [{ "key_code": "l" }]
                 },
                 {
                     "from": { "key_code": "comma" },
@@ -664,7 +664,7 @@
                 },
                 {
                     "from": { "key_code": "d" },
-                    "to": [{ "key_code": "i" }]
+                    "to": [{ "key_code": "u" }]
                 },
                 {
                     "from": { "key_code": "delete_or_backspace" },
@@ -684,7 +684,7 @@
                 },
                 {
                     "from": { "key_code": "g" },
-                    "to": [{ "key_code": "l" }]
+                    "to": [{ "key_code": "hyphen" }]
                 },
                 {
                     "from": { "key_code": "hyphen" },
@@ -731,10 +731,6 @@
                     "to": [{ "key_code": "y" }]
                 },
                 {
-                    "from": { "key_code": "p" },
-                    "to": [{ "key_code": "open_bracket" }]
-                },
-                {
                     "from": { "key_code": "period" },
                     "to": [{ "key_code": "j" }]
                 },
@@ -759,6 +755,10 @@
                     "to": [{ "key_code": "vk_none" }]
                 },
                 {
+                    "from": { "key_code": "s" },
+                    "to": [{ "key_code": "i" }]
+                },
+                {
                     "from": { "key_code": "semicolon" },
                     "to": [{ "key_code": "d" }]
                 },
@@ -777,10 +777,6 @@
                 {
                     "from": { "key_code": "y" },
                     "to": [{ "key_code": "g" }]
-                },
-                {
-                    "from": { "key_code": "s" },
-                    "to": [{ "key_code": "u" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
