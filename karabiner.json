@@ -33,7 +33,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + nmjtksrfyp to 1234567890 for better number key ergonomics",
+                        "description": "Map right_shift + nmjtksrfdp to 1234567890 for better number key ergonomics",
                         "manipulators": [
                             {
                                 "from": {
@@ -125,7 +125,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "y",
+                                    "key_code": "d",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -242,39 +242,11 @@
                         ]
                     },
                     {
-                        "description": "Disable shift+1 for ! and shift+- for =",
-                        "enabled": false,
+                        "description": "Remap right_shift + ly to /: to for home position date/time input",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "1",
-                                    "modifiers": {
-                                        "mandatory": ["left_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "vk_none" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "1",
-                                    "modifiers": {
-                                        "mandatory": ["right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "key_code": "vk_none" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap right_shift + ld to /: to for home position date/time input",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "slash",
+                                    "key_code": "l",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -285,7 +257,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "d",
+                                    "key_code": "y",
                                     "modifiers": {
                                         "mandatory": ["right_shift"],
                                         "optional": ["any"]
@@ -664,7 +636,7 @@
                 },
                 {
                     "from": { "key_code": "b" },
-                    "to": [{ "key_code": "l" }]
+                    "to": [{ "key_code": "slash" }]
                 },
                 {
                     "from": { "key_code": "comma" },
@@ -740,7 +712,7 @@
                 },
                 {
                     "from": { "key_code": "period" },
-                    "to": [{ "key_code": "z" }]
+                    "to": [{ "key_code": "j" }]
                 },
                 {
                     "from": { "key_code": "r" },
@@ -771,6 +743,10 @@
                     "to": [{ "key_code": "y" }]
                 },
                 {
+                    "from": { "key_code": "slash" },
+                    "to": [{ "key_code": "l" }]
+                },
+                {
                     "from": { "key_code": "t" },
                     "to": [{ "key_code": "period" }]
                 },
@@ -785,14 +761,6 @@
                 {
                     "from": { "key_code": "y" },
                     "to": [{ "key_code": "g" }]
-                },
-                {
-                    "from": { "key_code": "z" },
-                    "to": [{ "key_code": "slash" }]
-                },
-                {
-                    "from": { "key_code": "slash" },
-                    "to": [{ "key_code": "j" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
