@@ -4,6 +4,43 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "レイヤー1(right_shift): /v to ",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "slash",
+                                    "modifiers": {
+                                        "mandatory": ["right_shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "slash",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": {
+                                        "mandatory": ["right_shift"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "1",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "When Command+Space is pressed, first switch to EISUU, then open Spotlight.",
                         "manipulators": [
                             {
@@ -269,7 +306,7 @@
                         ]
                     },
                     {
-                        "description": "Map right_shift + auio to ()[] for home position ergonomics",
+                        "description": "レイヤー1(right_shift): aiuo to ()[]",
                         "manipulators": [
                             {
                                 "from": {
