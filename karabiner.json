@@ -4,6 +4,69 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "1st tap arms timer; 2nd tap within delay outputs period; otherwise comma",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "comma_pending",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "parameters": { "basic.to_delayed_action_delay_milliseconds": 320 },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "comma_pending",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_delayed_action": {
+                                    "to_if_canceled": [],
+                                    "to_if_invoked": [
+                                        { "key_code": "comma" },
+                                        {
+                                            "set_variable": {
+                                                "name": "comma_pending",
+                                                "value": 0
+                                            }
+                                        }
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "comma_pending",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    { "key_code": "period" },
+                                    {
+                                        "set_variable": {
+                                            "name": "comma_pending",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "レイヤー1(right_shift): /v to ",
                         "manipulators": [
                             {
@@ -752,10 +815,6 @@
                     "to": [{ "key_code": "j" }]
                 },
                 {
-                    "from": { "key_code": "r" },
-                    "to": [{ "key_code": "comma" }]
-                },
-                {
                     "from": { "key_code": "return_or_enter" },
                     "to": [{ "key_code": "vk_none" }]
                 },
@@ -798,6 +857,10 @@
                 {
                     "from": { "key_code": "y" },
                     "to": [{ "key_code": "g" }]
+                },
+                {
+                    "from": { "key_code": "r" },
+                    "to": [{ "key_code": "comma" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "jis" }
